@@ -28,6 +28,8 @@ class CasasViewController: UIViewController, UITableViewDelegate, UITableViewDat
     //MARK: - CONSTRUCTOR
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.navigationItem.titleView = UIImageView(image: UIImage(named: "logo58x58.png"))
         
         jsonUrl = "http://localhost:8888/RentaCasas/webservice.php"
         imageUrlArray    = [String]()

@@ -13,6 +13,7 @@ class TwoViewController: UIViewController {
     @IBOutlet weak var menuButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.titleView = UIImageView(image: UIImage(named: "logo58x58.png"))
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"
